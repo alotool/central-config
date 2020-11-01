@@ -9,7 +9,7 @@
 # http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # ==================================================================================================
 
-# SERVER
+# SERVER CONFIGURATION
 server:
   port: 8761
   servlet:
@@ -17,7 +17,7 @@ server:
       cookie:
         http-only: true
 
-# SPRING
+# SPRING CONFIGURATION
 spring:
   jmx:
     enabled: false
@@ -48,12 +48,12 @@ spring:
     ansi:
       console-available: true
 
-# RIBBON
+# RIBBON CONFIGURATION
 ribbon:
   eureka:
     enabled: true
 
-# ZUUL
+# ZUUL CONFIGURATION
 # See http://cloud.spring.io/spring-cloud-netflix/spring-cloud-netflix.html
 zuul: # those values must be configured depending on the application specific needs
   sensitive-headers: Cookie,Set-Cookie #see https://github.com/spring-cloud/spring-cloud-netflix/issues/3126
@@ -65,7 +65,7 @@ zuul: # those values must be configured depending on the application specific ne
   semaphore:
     max-semaphores: 500
 
-# MANAGEMENT
+# MANAGEMENT CONFIGURATION
 management:
   endpoints:
     web:
@@ -104,12 +104,13 @@ management:
           autotime:
             enabled: true
 
-# Properties to be exposed on the /info management endpoint
-info:
+# INFO CONFIGURATION
+info: # Properties to be exposed on the /info management endpoint
   # Comma separated list of profiles that will trigger the ribbon to show
   display-ribbon-on-profiles: 'dev'
 
-# ===================================================================
+# EUREKA CONFIGURATION
+# -------------------------------------------------------------------
 # Eureka server configuration (eureka.server.*)
 #
 # Full list of properties with default values at:
@@ -117,7 +118,7 @@ info:
 #
 # Documentation at:
 # https://github.com/Netflix/eureka/blob/master/eureka-core/src/main/java/com/netflix/eureka/EurekaServerConfig.java
-# ===================================================================
+# -------------------------------------------------------------------
 eureka:
   instance:
     appname: ${spring.application.name}
@@ -154,9 +155,7 @@ eureka:
   datacenter: Registry-DataCenter
   environment: Registry-Environment
 
-# ===================================================================
-# JLib specific properties
-# ===================================================================
+# JLIB CONFIGURATION
 jlib:
   clientApp:
     name: ${spring.application.name}
@@ -185,7 +184,5 @@ jlib:
         - account
         - api://default
 
-# ===================================================================
-# Application specific properties
-# ===================================================================
+# APPLICATION CONFIGURATION
 # application:
