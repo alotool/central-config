@@ -1,7 +1,7 @@
 # ==================================================================================================
 # Spring Boot configuration for the "gae" profile.
 #
-# This configuration overrides the ms-registry.yml file.
+# This configuration overrides the registry.yml file.
 #
 # Standard Spring Boot properties.
 # Full reference is available at:

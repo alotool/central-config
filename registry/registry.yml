@@ -2,7 +2,7 @@
 # Spring Boot configuration.
 #
 # This configuration will be overridden by the Spring profile you use,
-# for example ms-registry-dev.yml if you use the "dev" profile.
+# for example registry-dev.yml if you use the "dev" profile.
 #
 # Standard Spring Boot properties.
 # Full reference is available at:
