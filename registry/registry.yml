@@ -71,12 +71,12 @@ management:
     web:
       base-path: /management
       exposure:
-        include: ['configprops', 'env', 'health', 'info', 'jhimetrics', 'logfile', 'loggers', 'threaddump']
+        include: ['configprops', 'env', 'health', 'info', 'jlibmetrics', 'logfile', 'loggers', 'threaddump']
   endpoint:
     health:
       show-details: when-authorized
       roles: 'ROLE_ADMIN'
-    jhimetrics:
+    jlibmetrics:
       enabled: true
   info:
     git:
