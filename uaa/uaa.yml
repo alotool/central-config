@@ -27,12 +27,12 @@ management:
     web:
       base-path: /management
       exposure:
-        include: ['configprops', 'env', 'health', 'info', 'jhimetrics', 'logfile', 'loggers', 'prometheus', 'threaddump']
+        include: ['configprops', 'env', 'health', 'info', 'jlibmetrics', 'logfile', 'loggers', 'prometheus', 'threaddump']
   endpoint:
     health:
       show-details: when_authorized
       roles: 'ROLE_ADMIN'
-    jhimetrics:
+    jlibmetrics:
       enabled: true
   info:
     git:
@@ -185,7 +185,7 @@ eureka:
 #    value.serializer: org.apache.kafka.common.serialization.StringSerializer
 
 # JLIB CONFIGURATION
-jhipster:
+jlib:
   clientApp:
     name: ${spring.application.name}
   # By default CORS is disabled. Uncomment to enable.
