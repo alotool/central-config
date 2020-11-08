@@ -169,8 +169,8 @@ jlib:
   #     max-age: 1800
   api-docs:
     default-include-pattern: /api/.*
-    title: API documentation
-    description: API documentation
+    title: Services Registry API documentation
+    description: Services Registry API documentation
     version: ${info.project.version}
     terms-of-service-url:
     contact-name:
