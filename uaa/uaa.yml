@@ -104,13 +104,13 @@ spring:
     allow-bean-definition-overriding: true
   task:
     execution:
-      thread-name-prefix: uaa-task-
+      thread-name-prefix: ${spring.application.name}-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: uaa-scheduling-
+      thread-name-prefix: ${spring.application.name}-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -187,7 +187,7 @@ eureka:
 # JLIB CONFIGURATION
 jhipster:
   clientApp:
-    name: 'uaaApp'
+    name: ${spring.application.name}
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #     allowed-origins: "*"
