@@ -200,8 +200,8 @@ jhipster:
     from: uaa@localhost
   swagger:
     default-include-pattern: /api/.*
-    title: UAA API documentation
-    description: UAA API documentation
+    title: UAA API
+    description: User accounting & authorizing service API documentation
     version: ${info.project.version}
     terms-of-service-url:
     contact-name:
