@@ -198,7 +198,7 @@ jlib:
   #     max-age: 1800
   mail:
     from: uaa@localhost
-  swagger:
+  api-docs:
     default-include-pattern: /api/.*
     title: UAA API
     description: User accounting & authorizing service API documentation
