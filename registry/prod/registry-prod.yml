@@ -52,8 +52,8 @@ spring:
     cache: true
   security:
     user:
-      name: admin
-      password: admin
+      name: ${jlib.registry.username}
+      password: ${jlib.registry.password}
       roles: USER,ADMIN
 
 # ===================================================================
@@ -76,6 +76,9 @@ eureka:
 # JLib specific properties
 # ===================================================================
 jlib:
+  registry:
+    username: admin
+    password: admin
   http:
     cache: # Used by the CachingHttpHeadersFilter
       timeToLiveInDays: 1461

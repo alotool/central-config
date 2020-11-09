@@ -26,11 +26,6 @@ spring:
   mvc:
     favicon:
       enabled: false
-  security:
-    user:
-      name: admin
-      password: admin
-      roles: USER,ADMIN
   task:
     execution:
       thread-name-prefix: ${spring.application.name}-task-
@@ -143,8 +138,6 @@ eureka:
     register-with-eureka: false
     instance-info-replication-interval-seconds: 10
     registry-fetch-interval-seconds: 10
-    service-url:
-      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:${server.port}/eureka/
   server:
     # see discussion about enable-self-preservation:
     # https://github.com/jhipster/generator-jhipster/issues/3654

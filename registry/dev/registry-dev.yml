@@ -39,8 +39,8 @@ spring:
     password:
   security:
     user:
-      name: admin
-      password: admin
+      name: ${jlib.registry.username}
+      password: ${jlib.registry.password}
       roles: USER,ADMIN
   messages:
     cache-duration: PT1S # 1 second, see the ISO 8601 standard
@@ -76,6 +76,9 @@ eureka:
 # JLib specific properties
 # ===================================================================
 jlib:
+  registry:
+    username: admin
+    password: admin
   # CORS is only enabled by default with the "dev" profile, so BrowserSync can access the API
   cors:
     allowed-origins: '*'

@@ -25,7 +25,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://admin:${jlib.registry.password}@localhost:8761/eureka/
+      defaultZone: http://${jlib.registry.username}:${jlib.registry.password}@localhost:8761/eureka/
 
 # MANAGEMENT CONFIGURATION
 management:
