@@ -44,7 +44,7 @@ spring:
     console:
       enabled: false
   jpa:
-    database-platform: io.github.jhipster.domain.util.FixedH2Dialect
+    database-platform: io.github.alotool.jlib.domain.util.FixedH2Dialect
     show-sql: true
   data:
     elasticsearch:
