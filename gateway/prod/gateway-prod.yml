@@ -95,7 +95,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
+      defaultZone: http://${jlib.registry.username}:${jlib.registry.password}@localhost:8761/eureka/
 
 # MANAGEMENT CONFIGURATION
 management:
@@ -121,7 +121,7 @@ oauth2:
     session-timeout-in-seconds: 1800
 
 # JLIB CONFIGURATION
-jhipster:
+jlib:
   gateway:
     rate-limiting:
       enabled: false

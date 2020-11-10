@@ -194,9 +194,9 @@ info: # Properties to be exposed on the /info management endpoint
 #    value.serializer: org.apache.kafka.common.serialization.StringSerializer
 
 # JLIB CONFIGURATION
-jhipster:
+jlib:
   clientApp:
-    name: 'gatewayApp'
+    name: ${spring.application.name}
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #     allowed-origins: "*"
@@ -207,16 +207,16 @@ jhipster:
   #     max-age: 1800
   mail:
     from: gateway@localhost
-  swagger:
+  api-docs:
     default-include-pattern: /api/.*
     title: Gateway API
-    description: Gateway API documentation
-    version: 0.0.1
+    description: Services Gateway API documentation
+    version: ${info.project.version}
     terms-of-service-url:
     contact-name:
     contact-url:
     contact-email:
-    license: unlicensed
+    license:
     license-url:
 
 # APPLICATION CONFIGURATION
