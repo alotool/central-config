@@ -16,7 +16,7 @@ server:
 logging:
   level:
     ROOT: DEBUG
-    io.github.jhipster: DEBUG
+    io.github.alotool.jlib: DEBUG
     io.github.alotool.gateway: DEBUG
 
 # SPRING CONFIGURATION

@@ -39,7 +39,7 @@ server:
 logging:
   level:
     ROOT: INFO
-    io.github.jhipster: INFO
+    io.github.alotool.jlib: INFO
     io.github.alotool.gateway: INFO
 
 # SPRING CONFIGURATION
