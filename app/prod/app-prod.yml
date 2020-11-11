@@ -44,6 +44,8 @@ logging:
 
 # SPRING CONFIGURATION
 spring:
+  profiles:
+    include:
   devtools:
     restart:
       enabled: false
