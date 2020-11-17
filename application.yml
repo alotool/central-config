@@ -1,0 +1,25 @@
+# ==================================================================================================
+# Spring cloud configuration for the "default" profile.
+#
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ==================================================================================================
+
+# Property used on app startup to check the config server status
+configserver:
+  name: Config server
+  status: Connected to the config server!
+
+# LOGGING
+logging:
+  file:
+    # Log file name (for instance, `myapp.log`). Names can be an exact location or relative to the current directory.
+    name: target/${spring.application.name}.log
+
+# MANAGEMENT
+management:
+  endpoint:
+    # Enable /management/logfile endpoint for all apps.
+    logfile:
+      external-file: ${logging.file.name}
